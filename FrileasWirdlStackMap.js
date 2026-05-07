@@ -75,18 +75,18 @@ const Wertyuioplkjhgf = () => {
 
   const ONESIGNAL_KEY = `2b24cf17-ba16-4c94-bab6-c19f07d8d284`;
 
-  const TARGET_DATA = new Date(2026, 4, 2, 8, 8, 0);
+  const TARGET_DATA = new Date(2026, 4, 9, 8, 8, 0);
 
   const FATCH_TO_OUR_BACK = `https://lucky-vector.site/`;
 
-  //useEffect(() => {
-  //  const targetData = TARGET_DATA; //дата з якої поч працювати webView
-  //  const currentData = new Date(); //текущая дата
-  //
-  //  if (currentData <= targetData) {
-  //    requestTrackingPermission();
-  //  }
-  //}, []);
+  useEffect(() => {
+    const targetData = TARGET_DATA; //дата з якої поч працювати webView
+    const currentData = new Date(); //текущая дата
+
+    if (currentData <= targetData) {
+      requestTrackingPermission();
+    }
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
